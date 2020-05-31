@@ -191,4 +191,7 @@ footer, .slideshow, .Links {
     .link-button {
         max-width: 140px;
     }
+    .logo:hover {
+        filter: none;
+    }
 }
