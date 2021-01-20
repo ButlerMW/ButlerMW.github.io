@@ -16,6 +16,9 @@ DONE - Create a small personal summary under title
 - change the footer text color
 - look into metatags => find the right metatags for this project => 
 - when the title color changes, have the 'hover' color change to the same color. 
+- fix projects link in homepage
+- fix image issue with background
+- change font
 
 OTHER TODO STUFF
 ================
