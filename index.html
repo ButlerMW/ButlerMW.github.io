@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Butler</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Butler</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="logo.png">
 </head>
 <body>
-    <main>
-        <header>
-            <h1 class="Name">Michael Butler</h1>
-        </header>
-        <section>
-            <div class="slideshow">
-                <div>
-                    <img class="slide fade" src="MB_Owyhee_Mountains.jpg" alt="MB_Owyhee_Mountains" />
-                </div>
-                <div>
-                    <img class="slide fade" src="Boise_SkyBridge.jpg" alt="Boise_SkyBridge" />
-                </div>
-                <div>
-                    <img class="slide fade" src="Early_React_Project.jpg" alt="Early_React_Project" />
-                </div>
-                <div>
-                    <img class="slide fade" src="First_Day_Coding_Dojo.jpg" alt="First_Day_Coding_Dojo" />
-                </div>
-            </div>
-            <div class="Links">
-                <a href="/about" class="link-button">About</a>
-                <a href="/projects" class="link-button">Projects</a>
-            </div>
-        </section>
-        <footer>
-            <a href="https://github.com/ButlerMW" target="_blank"><img class="logo" src="github-logo.png" alt="github-logo" /></a>
-            <a href="mailto:butler.m.w@outlook.com"><img class="logo" src="email-logo.png" alt="email-logo" /></a>
-        </footer>    
-    </main>
-    <script src="index.js"></script>
+  <main class="main">
+    <div class="container">
+      <h1 id="title" class="name" onclick="colorChange()" >Michael Butler</h1>
+      <div class="summary">
+        <p>
+          An Adventurer, Hiker, Animal Lover, Software 
+          Developer, Land Surveyor, Foodie, Grill Master, College Graduate, 
+          Bootcamp Graduate, Always looking to learn and grow. Want 
+          to know more just ask!
+        </p>
+      </div>
+      
+      <nav>
+        <ul>
+          <li>
+            <a class="link-button" href="/about" >About</a>
+          </li>
+          <li>
+            <a class="link-button" href="/project" >Project</a>
+          </li>
+          <li>
+            <a class="link-button" href="https://github.com/ButlerMW" target="_blank">GitHub</a>
+          </li>
+          <li>
+            <a class="link-button" href="mailto:butler.m.w@outlook.com">Email</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </main>
+  <footer class="footer">
+    <p>created by Michael Butler, 2020</p>
+    <p>updated 2021</p>
+  </footer>    
+  <script src="index.js"></script>
 </body>
 </html>
