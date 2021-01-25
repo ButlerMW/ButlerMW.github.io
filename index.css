@@ -27,6 +27,11 @@ p {
   margin: 2px;
 }
 
+footer p {
+  color: var(--hollow-honeydew);
+  margin-right: 10px;
+}
+
 .main {
   display: flex;
   flex-direction: column;
