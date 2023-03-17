@@ -6,44 +6,47 @@
   <title>Michael Butler</title>
   <link rel="stylesheet" href="index.css">
   <link rel="icon" href="logo.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
-  <main id="main" class="main">
-    <div id="container" class="container color-change">
-      <h1 id="title" class="name" >Michael Butler</h1>
-      
-      <nav>
-        <ul>
-          <!-- Temporary disabled -->
-          <!-- <li>
-            <a class="link-button color-change" href="/about" >About</a>
-          </li> -->
-          <li>
-            <a class="link-button color-change" href="/projects" >Projects</a>
-          </li>
-          <li>
-            <a class="link-button color-change" href="https://github.com/ButlerMW" target="_blank">GitHub</a>
-          </li>
-          <li>
-            <a class="link-button color-change" href="mailto:butler.m.w@outlook.com">Email</a>
-          </li>
-          <li>
-            
-          </li>
-        </ul>
-        
-        <!-- May be moved to a separate project -->
-        <!-- <button class="link-button color-change" onclick="ColorChange()">Color Changer!</button> -->
-        <!-- <button class="link-button" onclick="DarkMode()">Dark Mode</button>  -->
-
-      </nav>
-
-
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#" class="brand-logo">Michael Butler</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="/about">About</a></li>
+        <li><a href="#!">Projects</a></li>
+        <li><a class="subheader">GitHub</a></li>
+      </ul>
     </div>
-  </main>
-  <footer id="footer" class="footer color-change">
-    <p>Created, Designed and Photo taken by Michael Butler 2020</p>
-  </footer>    
+  </nav>
+
+  <ul id="slide-out" class="sidenav">
+    <li><i class="material-icons white-text">info_outline</i></li> 
+    <li><a href="/about"><i class="material-icons">person</i>About</a></li>
+    <li><a href="#!"><i class="material-icons">subject</i>Projects</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">GitHub</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+
+
+  <div class="parallax-container">
+    <div class="parallax"><img src="Eagle_Idaho_Autumn.JPG"></div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h2 class="header">Parallax</h2>
+      <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="First_Day_Coding_Dojo.jpg"></div>
+  </div>
+
   <script src="index.js"></script>
 </body>
 </html>
