@@ -1,7 +1,5 @@
-<h1 align="center">
-  Michael Butler
-</h1>
- 
-That's me 😁
+<h1>Michael Butler</h1>
 
-Just a personal webiste that I modify from time to time. 
+Personal Website.
+
+view @ [butlermw.github.io](butlermw.github.io)

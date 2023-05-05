@@ -1,59 +1,62 @@
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.sidenav');
-  var instances = M.Sidenav.init(elems, options);
-});
+// render the navbar 
+const nav = document.querySelector("nav");
+nav.setAttribute('id', 'navbar');
+const navLinks = ['Home','About','Projects','GitHub'];
 
-// Or with jQuery
+for(let i = 0; i < navLinks.length; i++) {
+  let aTag = document.createElement("a");
+  aTag.setAttribute('href', '#');
+  let aTagContent = document.createTextNode(navLinks[i]);
+  aTag.appendChild(aTagContent);
+  nav.appendChild(aTag);
 
-$(document).ready(function(){
-  $('.sidenav').sidenav();
-});
-     
+  switch(navLinks[i]) {
+    case 'Home':
+      aTag.setAttribute('onclick', 'getPage("home")');
+      break;
+    case 'About':
+      aTag.setAttribute('onclick', 'getPage("about")');
+      break;
+    case 'Projects':
+      aTag.setAttribute('onclick', 'getPage("projects")');
+      break;
+    case 'GitHub':
+      aTag.setAttribute('onclick', 'gitHubRedirect()');
+      break;
+  }
+}
 
+function getPage(link) {
+  const pages = document.getElementsByTagName("div");
 
+  for(let i = 0; i < pages.length; i++) {
+      pages[i].setAttribute('hidden', 'hidden');
+  }
 
-// function ColorChange() {
-//   // let r = Math.floor(Math.random() * 256);
-//   // let g = Math.floor(Math.random() * 256);
-//   // let b = Math.floor(Math.random() * 256);
-//   // let newTitleColor = `rgb(${r}, ${g}, ${b})`; 
-//   document.getElementById("main").style.backgroundColor = null;
+  switch(link) {
+    case 'home':
+      renderHome();
+      break;
+    case 'about':
+      renderAbout();
+      break;
+    case 'projects':
+      renderProjects();
+      break;
+  }
+}
 
-//   document.getElementById("title").style.color = RandomColorizer();
-
-//   // r = Math.floor(Math.random() * 256);
-//   // g = Math.floor(Math.random() * 256);
-//   // b = Math.floor(Math.random() * 256);
-//   // let newButtonColor = `rgb(${r}, ${g}, ${b})`; 
-//   var elements = document.getElementsByClassName("color-change");
-//   for(var i = 0; i < elements.length; i++) {
-//     elements[i].style.backgroundColor = RandomColorizer();
-//     elements[i].style.color = RandomColorizer();
-//   }
-// }
-
-// function RandomColorizer() {
-//   let r = Math.floor(Math.random() * 256);
-//   let g = Math.floor(Math.random() * 256);
-//   let b = Math.floor(Math.random() * 256);
-//   let randomColor = `rgb(${r}, ${g}, ${b})`; 
+function renderHome() {
+  const newDiv = document.createElement("div");
+  const newContent = document.createTextNode("home!");
+  newDiv.appendChild(newContent);
   
-//   return randomColor;
-// }
+  const script = document.getElementsByTagName('script');
+  document.body.insertBefore(newDiv, script[0]);
+}
 
-// function DarkMode() {
-//   // document.footer.style.color = "#121212";
-//   var elements = document.getElementsByClassName("color-change");
-//   for(var i = 0; i < elements.length; i++) {
-//     elements[i].style.backgroundColor = RandomColorizer();
-//     elements[i].style.color = RandomColorizer();
-//   }
-
-//   // document.documentElement.style.setProperty('--ocean-green', '#121212');
-//   document.getElementById("container").style.backgroundColor = "#121212";
-//   document.getElementById("title").style.color = "#d5f2e3"; 
-//   document.getElementById("footer").style.backgroundColor = "#121212"; 
-//   // document.body.style.backgroundColor = "#121212";
-//   // document.body.style.backgroundImage = null;
-//   document.getElementById("main").style.backgroundColor = "#121212";
-// }
+function gitHubRedirect() {
+  if(confirm("You will be redirected to GitHub")){
+    location.replace("https://github.com/ButlerMW");
+  }
+}
