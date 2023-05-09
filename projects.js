@@ -10,6 +10,7 @@ function renderProjects() {
     newDiv.setAttribute('hidden', 'hidden');
     
     const script = document.getElementsByTagName('script');
+    
     document.body.insertBefore(newDiv, script[0]);
 }
 
