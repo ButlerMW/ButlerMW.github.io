@@ -1,4 +1,5 @@
 
+
 const text = [
     "I am a recent graduate with a second degree in Computer Science and have passion for all things technology and computing.",
     "Throughout my career path, I have demonstrated a commitment to excellence, constantly pushing myself to learn, grow, and develop new skills in all sorts of fields in land surveying, IT, Cybersecurity, as well as Software Development. ",
