@@ -33,10 +33,12 @@ function getPage(link) {
 
   switch(link) {
     case 'home':
+      document.body.style.backgroundImage = 'url(Eagle_Idaho_Autumn.jpg)';
       index = 0;
       break;
     case 'about':
       index = 1;
+      document.body.style.backgroundImage = 'none';
       break;
     case 'projects':
       index = 2;

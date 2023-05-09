@@ -7,6 +7,7 @@ const styles = {
         "margin": "0;",
     },
     "body": {
+        "background-color": "#E7E7E7;",
         "background-image": "url(Eagle_Idaho_Autumn.jpg);",
         "-webkit-background-size": "cover;",
         "-moz-background-size": "cover;",
@@ -39,9 +40,13 @@ const styles = {
     },
     "div div": {
         "display": "flex;",
+        "flex-direction": "column;",
         "align-items": "center;",
         "justify-content": "center",
     },
+    "p": {
+        "width": "80%;"
+    }
 }
 
 const newStyle = document.createElement('style');
