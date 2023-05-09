@@ -8,7 +8,7 @@ const styles = {
     },
     "body": {
         "background-color": "#E7E7E7;",
-        "background-image": "url(Eagle_Idaho_Autumn.jpg);",
+        "background-image": "url(https://ButlerMW.github.io/Eagle_Idaho_Autumn.JPG);",
         "-webkit-background-size": "cover;",
         "-moz-background-size": "cover;",
         "-o-background-size": "cover;",

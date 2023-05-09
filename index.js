@@ -33,7 +33,7 @@ function getPage(link) {
 
   switch(link) {
     case 'home':
-      document.body.style.backgroundImage = 'url(Eagle_Idaho_Autumn.jpg)';
+      document.body.style.backgroundImage = 'url(https://ButlerMW.github.io/Eagle_Idaho_Autumn.JPG)';
       index = 0;
       break;
     case 'about':
