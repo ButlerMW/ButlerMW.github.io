@@ -13,11 +13,9 @@ for(let i = 0; i < navLinks.length; i++) {
   switch(navLinks[i]) {
     case 'Home':
       aTag.setAttribute('onclick', 'getPage("home")');
-      // aTag.style.color = "white";
       break;
     case 'About':
       aTag.setAttribute('onclick', 'getPage("about")');
-      // aTag.style.color = "white";
       break;
     case 'Projects':
       aTag.setAttribute('onclick', 'getPage("projects")');
@@ -29,23 +27,30 @@ for(let i = 0; i < navLinks.length; i++) {
 }
 
 function getPage(link) {
-  const pages = document.getElementsByTagName("div");
 
-  for(let i = 0; i < pages.length; i++) {
-      pages[i].setAttribute('hidden', 'hidden');
-  }
+  const pages = document.getElementsByClassName('pages');
+  var index = -1;
 
   switch(link) {
     case 'home':
-      renderHome();
+      index = 0;
       break;
     case 'about':
-      renderAbout();
+      index = 1;
       break;
     case 'projects':
-      renderProjects();
+      index = 2;
       break;
   }
+  
+  for(let i = 0; i < pages.length; i++) {
+    if(i != index) {
+      pages[i].setAttribute('hidden', 'hidden');
+    } else {
+      pages[i].removeAttribute('hidden');
+    }
+  }
+
 }
 
 function renderHome() {
@@ -59,6 +64,7 @@ function renderHome() {
   div2.appendChild(span);
   span.appendChild(content);
 
+  div1.setAttribute('class', 'pages');
   span.setAttribute('id', 'title');
   
   document.body.insertBefore(div1, script[0]);
@@ -70,10 +76,3 @@ function githubRedirect() {
   }
 }
 
-
-// <!-- First Parallax Image with Logo Text -->
-// <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-//   <div class="w3-display-middle" style="white-space:nowrap;">
-//     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MICHAEL BUTLER</span>
-//   </div>
-// </div>

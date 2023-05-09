@@ -22,7 +22,6 @@ const styles = {
         "border-radius": "5px;",
     },
     "nav": {
-        // "display": "flex;"
         "display": "flex;",
         "align-items": "center;",
         "justify-content": "center",
@@ -31,8 +30,6 @@ const styles = {
         "padding": "16px 32px;",
         "text-decoration": "none;",
         "color": "#404040",
-        // "color": "#E3930E;",
-        // "color": "white",
     },
     "#navbar a:hover": {
         "background-color": "rgb(200,200,200,0.5)",
