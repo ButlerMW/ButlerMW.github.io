@@ -1,5 +1,4 @@
 
-
 const text = [
     "I am a recent graduate with a second degree in Computer Science and have passion for all things technology and computing.",
     "Throughout my career path, I have demonstrated a commitment to excellence, constantly pushing myself to learn, grow, and develop new skills in all sorts of fields in land surveying, IT, Cybersecurity, as well as Software Development. ",
@@ -14,8 +13,9 @@ function renderAbout() {
     const div2 = document.createElement("div");
     
     div1.appendChild(div2);
-    div1.setAttribute('class', 'pages');
+    div1.setAttribute('class', 'pages sizeable');
     div1.setAttribute('hidden', 'hidden');
+    div2.setAttribute('class', 'sizeable');
     
     for(let i = 0; i < text.length; i++) {
         const p = document.createElement('p');

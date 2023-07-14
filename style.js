@@ -7,8 +7,7 @@ const styles = {
         "margin": "0;",
     },
     "body": {
-        "background-color": "#E7E7E7;",
-        "background-image": "url(https://ButlerMW.github.io/Eagle_Idaho_Autumn.JPG);",
+        "background-color": "#539D8B;",
         "-webkit-background-size": "cover;",
         "-moz-background-size": "cover;",
         "-o-background-size": "cover;",
@@ -16,27 +15,34 @@ const styles = {
         "background-repeat": "no-repeat",
     },
     "#title": {
-        "background-color": "#404040;",
+        "background-color": "#539D8B;",
         "letter-spacing": "10px;",
-        "color": "white;",
+        "color": "#F6C5BE;",
         "padding": "10px 0px 10px 10px;",
         "border-radius": "5px;",
+        // "font-size": "18px",
     },
-    "nav": {
+    "#navbar": {
         "display": "flex;",
+        "justify-content": "center;",
         "align-items": "center;",
-        "justify-content": "center",
+        "position": "fixed;",
+        "top": "0;",
+        "width": "100%;",
     },
     "#navbar a": {
         "padding": "16px 32px;",
         "text-decoration": "none;",
-        "color": "#404040",
+        "color": "#F6C5BE;",
     },
     "#navbar a:hover": {
         "background-color": "rgb(200,200,200,0.5)",
     },
-    "div": {
+    ".sizeable": {
         "height": "93%;",
+    },
+    ".container": {
+        "margin-top": "50px;"
     },
     "div div": {
         "display": "flex;",
@@ -46,6 +52,13 @@ const styles = {
     },
     "p": {
         "width": "80%;"
+    },
+    ".card": {
+        "width": "80%;",
+        // "background-color": "#E7E7E7;",
+        "background-color": "#F6C5BE;",
+        "margin": "20px;",
+        "border-radius": "25px"
     }
 }
 
