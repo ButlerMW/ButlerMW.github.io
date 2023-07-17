@@ -1,7 +1,7 @@
 
 renderHome();
 nav.setAttribute('id', 'navbar');
-const navLinks = ['Home','About','Projects','GitHub'];
+const navLinks = ['About','Projects','GitHub','Resume'];
 
 for(let i = 0; i < navLinks.length; i++) {
   let aTag = document.createElement("a");
@@ -40,7 +40,10 @@ function getPage(link) {
       index = 2;
       break;
     case 'GitHub':
-      githubRedirect();
+      window.open("https://github.com/ButlerMW", "_blank");
+      return;
+    case 'Resume':
+      window.open("https://butlermw.github.io/Michael_Butler_Resume.pdf", "_blank");
       return;
   }
       
@@ -124,11 +127,5 @@ function renderHome() {
   span.setAttribute('id', 'title');
   
   document.body.insertBefore(div1, script[0]);
-}
-
-function githubRedirect() {
-  if(confirm("You will be redirected to GitHub")){
-    location.replace("https://github.com/ButlerMW");
-  }
 }
 
