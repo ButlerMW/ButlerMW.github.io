@@ -86,15 +86,6 @@ function getPage(link) {
 function changePage(index, pages) {
   for(let i = 0; i < pages.length; i++) {
     if(i != index) {
-      // var op = 1;  // initial opacity
-      // // console.log(op);
-      // var timer = setInterval(function () {
-      //   if (op = 0) {
-      //     clearInterval(timer);
-      //   }
-      //   pages[i].style.opacity = op;
-      //   op -= 0.1;
-      // }, 30);
       pages[i].setAttribute('hidden', 'hidden');
     } else {
       pages[i].style.opacity = 0;

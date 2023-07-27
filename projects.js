@@ -41,7 +41,7 @@ function renderProjects() {
         const card = document.createElement("div");
         const h3 = document.createElement('h3');
         let p = document.createElement('p');
-        const ul = document.createElement('ul');
+        let ul = document.createElement('ul');
         const links = projects[i].links;
         const tools = projects[i].tools;
         const role = document.createTextNode(projects[i].role);
@@ -65,10 +65,16 @@ function renderProjects() {
             ul.appendChild(li);
         }
 
-        p = document.createElement('p');
-        card.appendChild(p);
+        ul = document.createElement('ul');
+        ul.setAttribute('class', 'tool-list');
+        card.appendChild(ul);
         for(let j = 0; j < tools.length; j++) {
+            const li = document.createElement('li');
+            li.setAttribute('class', 'tool-item');
+            p = document.createElement('p');
             p.appendChild(document.createTextNode(tools[j]));
+            li.appendChild(p);
+            ul.appendChild(li);
         }
 
         p = document.createElement('p');

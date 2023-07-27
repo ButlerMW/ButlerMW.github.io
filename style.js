@@ -20,7 +20,6 @@ const styles = {
         "color": "#F6C5BE;",
         "padding": "10px 0px 10px 10px;",
         "border-radius": "5px;",
-        // "font-size": "18px",
     },
     "#navbar": {
         "display": "flex;",
@@ -50,16 +49,28 @@ const styles = {
         "align-items": "center;",
         "justify-content": "center",
     },
-    "p": {
-        "width": "80%;"
+    ".about-text": {
+        "width": "80%;",
     },
     ".card": {
-        "width": "80%;",
-        // "background-color": "#E7E7E7;",
+        "width": "70%;",
         "background-color": "#F6C5BE;",
         "margin": "20px;",
-        "border-radius": "25px"
+        "border-radius": "25px;",
+        "padding": "28px;",
+    },
+    "ul": {
+        "list-style-type": "none;",
+        "padding-left": "0;",
+    },
+    ".tool-list": {
+        "display": "inline-flex;",
+    },
+    ".tool-item": {
+        "padding": "0 2px 0 2px;",
+        "font-weight": "600;",
     }
+
 }
 
 const newStyle = document.createElement('style');

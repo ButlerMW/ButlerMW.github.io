@@ -22,6 +22,7 @@ function renderAbout() {
         const content = document.createTextNode(text[i]);
         div2.appendChild(p);
         p.appendChild(content);
+        p.setAttribute('class', 'about-text');
     }
     
     const script = document.getElementsByTagName('script');
