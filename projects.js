@@ -1,14 +1,11 @@
 
-let projects = [
+const projects = [
     {
-        title: "ButlerMW.github.io",
-        desc: "A personal website display personal more personal and professional information.",
-        links: [ "https://github.com/ButlerMW/ButlerMW.github.io" ],
-        tools: ["JavaScript", "HTML", "GitHub", "VSCode", "Trello"],
-        role: "Normally, I would not address this website as a project since it is static web files, " +
-                "but I wanted to not this project due to a challenge I create for myself and to answer a " +
-                "question \"How can I build a website with using as much JavaScript as possible?\" and here " +
-                "is this website. This website is created with multiple JS files, photos, and a single HTML file. :)"
+        title: "PivotPro",
+        desc: "Senior Design project with a local sponsor farming company. A recent and severe drought in Idaho has renewed calls for the efficient use of water resources. The goal is to help Idaho farms analyze and optimize crop water usage saving up to 30% of water. This project aimed to create a modern web interface to automate, connect to, and collect telemetry data from sensors in the field and make it available to a front-end web interface, allowing farms across Idaho to generate graphs, reports, and visualizations from the data.",
+        links: ["https://sdp.boisestate.edu/s23-stone-cold-potatoes/project/", "https://www.boisestate.edu/coen/senior-design-showcase-brochure/"],
+        tools: ["Django", "Python", "AG Grid", "ChartJS", "JavaScript", "Materialize", "SQLite", "Docker", "GitHub", "VSCode"],
+        role: "We as a team took the role as full stack engineers to gain expirience all parts of the project as well as rotate specific roles. My main focus on the project was working on the API connection to collect live pivot water data and display in an interactive table. Other tasks involed styling with Materialize, and creating the dashboard."
     },
     {
         title: "Cards Against Mad Libs",
@@ -18,12 +15,22 @@ let projects = [
         role: "This was a partnered project. My main roles was designing the project and working on the database and the front end features. Other responsibilities was assisting and testing the live socket connections."
     },
     {
-        title: "PivotPro",
-        desc: "Senior Design project with a local sponsor farming company. A recent and severe drought in Idaho has renewed calls for the efficient use of water resources. The goal is to help Idaho farms analyze and optimize crop water usage saving up to 30% of water. This project aimed to create a modern web interface to automate, connect to, and collect telemetry data from sensors in the field and make it available to a front-end web interface, allowing farms across Idaho to generate graphs, reports, and visualizations from the data.",
-        links: ["https://sdp.boisestate.edu/s23-stone-cold-potatoes/project/", "https://www.boisestate.edu/coen/senior-design-showcase-brochure/"],
-        tools: ["Django", "Python", "AG Grid", "ChartJS", "JavaScript", "Materialize", "SQLite", "Docker", "GitHub", "VSCode"],
-        role: "We as a team took the role as full stack engineers to gain expirience all parts of the project as well as rotate specific roles. My main focus on the project was working on the API connection to collect live pivot water data and display in an interactive table. Other tasks involed styling with Materialize, and creating the dashboard."
+        title: "Interpreter Project",
+        desc: "Executes source code by translating it into machine-readable instructions and directly executing them, using scanner and recursive parser that builds a Context Free Grammar parse tree",
+        links: [  ],
+        tools: ["Python", "Git Bash", "VSCode"],
+        role: ""
     },
+    // {
+    //     title: "ButlerMW.github.io",
+    //     desc: "A personal website display personal more personal and professional information.",
+    //     links: [ "https://github.com/ButlerMW/ButlerMW.github.io" ],
+    //     tools: ["JavaScript", "HTML", "GitHub", "VSCode", "Trello"],
+    //     role: "Normally, I would not address this website as a project since it is static web files, " +
+    //             "but I wanted to not this project due to a challenge I create for myself and to answer a " +
+    //             "question \"How can I build a website with using as much JavaScript as possible?\" and here " +
+    //             "is this website. This website is created with multiple JS files, photos, and a single HTML file. :)"
+    // },
 ];
 
 
