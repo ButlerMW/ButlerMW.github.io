@@ -1,122 +1,75 @@
 
-renderHome();
-nav.setAttribute('id', 'navbar');
-const navLinks = ['About','Projects','GitHub','Resume'];
+renderIntro();
 
-for(let i = 0; i < navLinks.length; i++) {
-  let aTag = document.createElement("a");
-  aTag.setAttribute('href', '#');
-  let aTagContent = document.createTextNode(navLinks[i]);
-  aTag.appendChild(aTagContent);
-  nav.appendChild(aTag);
-
-  aTag.onclick = () => {
-    getPage(navLinks[i]);
+let aTag = document.getElementsByClassName("navLink");
+for(let i = 0; i < aTag.length; i++) {
+    aTag[i].onclick = () => {
+      colorToggle(aTag, i);
+      getPage(aTag[i].innerHTML);
   }
 }
 
-var op = 0.01;  // initial opacity
-var timer = setInterval(function () {
-  if (op >= 1) {
-    clearInterval(timer);
-  }
-  nav.style.opacity = op;
-  op += op * 0.1;
-}, 30);
+function colorToggle(list, index) {
 
-function getPage(link) {
-
-  const pages = document.getElementsByClassName('pages');
-  var index = -1;
-
-  switch(link) {
-    case 'Home':
-      index = 0;
-      break;
-    case 'About':
-      index = 1;
-      break;
-    case 'Projects':
-      index = 2;
-      break;
-    case 'GitHub':
-      window.open("https://github.com/ButlerMW", "_blank");
-      return;
-    case 'Resume':
-      window.open("https://butlermw.github.io/Michael_Butler_Resume.pdf", "_blank");
-      return;
-  }
-      
-  if(index > 0) {
-    var spacing = 10;  // initial opacity
-    var op = 1;
-    var fontsize = 16;
-    var timer = setInterval(function () {
-      if (spacing >= 50) {
-        clearInterval(timer);
-      }
-      document.getElementById('title').style.opacity = op;
-      document.getElementById('title').style.letterSpacing = spacing + "px";
-      document.getElementById('title').style.fontSize = fontsize + "px";
-      spacing += 1;
-      fontsize += 1;
-      op -= 0.1;
-    }, 50);
-  } else {
-    var spacing = 50;  // initial opacity
-    var op = 0.1;
-    var fontsize = 56;
-    var timer = setInterval(function () {
-      if (spacing <= 10) {
-        clearInterval(timer);
-      }
-      document.getElementById('title').style.opacity = op;
-      document.getElementById('title').style.letterSpacing = spacing + "px";
-      document.getElementById('title').style.fontSize = fontsize + "px";
-      spacing -= 1;
-      fontsize -= 1;
-      op += 0.1;
-    }, 50);
-
-  }
-
-  setTimeout(() => { changePage(index, pages) }, 800);
-}
-
-function changePage(index, pages) {
-  for(let i = 0; i < pages.length; i++) {
-    if(i != index) {
-      pages[i].setAttribute('hidden', 'hidden');
+  for(let i = 0; i < list.length; i++) {
+    if(i == index) {
+      list[i].style.color = "rgb(200, 200, 200)";
+      list[i].style.fontWeight = 'bold';
     } else {
-      pages[i].style.opacity = 0;
-      pages[i].removeAttribute('hidden');
-      var op = 0.01;  // initial opacity
-      var timer = setInterval(function () {
-        if (op >= 1) {
-          clearInterval(timer);
-        }
-        pages[i].style.opacity = op;
-        op += op * 0.1;
-      }, 30);
+      list[i].style.color = "#F6C5BE";
+      list[i].style.fontWeight = '';
     }
   }
 }
 
-function renderHome() {
-  const div1 = document.createElement("div");
-  const div2 = document.createElement("div");
-  const span = document.createElement("span")
-  const script = document.getElementsByTagName('script');
-  const content = document.createTextNode("MICHAEL BUTLER");
+function getPage(link) {
   
-  div1.appendChild(div2);
-  div2.appendChild(span);
-  span.appendChild(content);
+  const pages = document.getElementsByClassName('pages');
+  var index = -1;
 
-  div1.setAttribute('class', 'pages sizeable');
-  div2.setAttribute('class', 'sizeable');
-  span.setAttribute('id', 'title');
-  
-  document.body.insertBefore(div1, script[0]);
+  switch(link) {
+    case 'Intro':
+      index = 0;
+      break;
+    case 'Education':
+      index = 1;
+      break;
+    case 'Experience':
+      index = 2;
+      break;
+    case 'Projects':
+      index = 3;
+      break;
+    case 'Previous Experience':
+      index = 4;
+      break;
+    case 'Contact':
+      index = 5;
+      break;
+  }
+
+  changePage(index, pages);
+}
+
+function changePage(index, pages) {
+ 
+  for(let i = 0; i < pages.length; i++) {
+    if(i != index) {
+      pages[i].setAttribute('hidden', 'hidden');
+    } else {
+      pages[i].removeAttribute('hidden');
+    }
+  }
+}
+
+function renderIntro() {
+  const sections = document.getElementsByClassName("pages");
+  const navLinks = document.getElementsByClassName("navLink");
+  navLinks[0].style.color = "rgb(200, 200, 200)";
+  navLinks[0].style.fontWeight = 'bold';
+
+  for(let i = 1; i < sections.length; i++) {
+    sections[i].setAttribute('hidden', 'hidden');
+  }
 }
 

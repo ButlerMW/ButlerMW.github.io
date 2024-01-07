@@ -5,13 +5,184 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Michael Butler</title>
   <link rel="icon" href="MB-logo.jpeg">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/764e2ebde4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav></nav>
+  <nav id="navbar">
+    <a href="#intro" class="navLink">Intro</a>
+    <a href="#education" class="navLink">Education</a>
+    <a href="#experience" class="navLink">Experience</a>
+    <a href="#projects" class="navLink">Projects</a>
+    <a href="#prevexp" class="navLink">Previous Experience</a>
+    <a href="#contact" class="navLink">Contact</a>
+  </nav>
 
-  <script src="style.js"></script>
-  <script src="index.js"></script>
-  <script src="about.js"></script>
-  <script src="projects.js"></script>
-</body>
+  <div class="pages sizeable">
+    <div class="sizeable">
+      <span id="title">MICHAEL BUTLER</span>
+      <span style="color: rgb(200,200,200);">Digital Products | Software Engineering | All Things Technology</span>
+      <div id="list">
+        <a href="https://github.com/ButlerMW" target="_blank">
+          <i class="fa-brands fa-github" style="color: #f6c5be;"></i>
+        </a>
+        <a href="mailto: butler.m.w@outlook.com">
+          <i class="fa-solid fa-envelope" style="color: #f6c5be;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/butlermw/" target="_blank">
+          <i class="fa-brands fa-linkedin" style="color: #f6c5be;"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="pages sizeable">
+    <div class="sizeable ">
+
+      <div class="ed-card ">
+        <img class="school-logo" src="Boise_State_University_seal.svg" alt="Boise_State_University_seal">
+        <div class="ed-container ">
+          <h4>B.S. in Computer Science</h4> 
+          <p>Boise State University, 2023</p> 
+          <p>Boise, ID</p>
+        </div>
+      </div>
+
+      <div class="ed-card ">
+        <img class="school-logo" src="University_of_Idaho_seal.svg" alt="University_of_Idaho_seal" >
+        <div class="ed-container ">
+          <h4>B.G.S. in General Sciences</h4> 
+          <p>University of Idaho, 2016</p> 
+          <p>Moscow, ID</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="pages container">
+    <div>
+      <table id="skills">
+        <tr>
+          <th>Languages</th>
+          <td>Java</td>
+          <td>C#</td>
+          <td>JavaScript</td>
+          <td>Python</td>
+          <td>CSS</td>
+          <td>HTML</td>
+          <td>SQL</td>
+          <td>C</td>
+        </tr>
+        <tr>
+          <th>Frameworks</th>
+          <td>.Net</td>
+          <td>React</td>
+          <td>Gatsby</td>
+          <td>Express.js</td>
+          <td>Django</td>
+        </tr>
+        <tr>
+          <th>Misc. Tools</th>
+          <td>JIRA</td>
+          <td>Confluence</td>
+          <td>Cypress.js</td>
+          <td>MySQL</td>
+          <td>MongoDB</td>
+          <td>Docker</td>
+        </tr>
+      </table>
+
+      <div class="exp-card ">
+        <img class="work-logo" src="aca-trans-logo.sm.png" alt="aca-trans-logo">
+        <div class="exp-container ">
+          <h4><b>American Credit Acceptance</b></h4> 
+          <p>Digital Product Analyst</p> 
+          <p>September 2023 - Present</p> 
+          <p>Boise, ID</p>
+        </div>
+      </div>
+
+      <div class="exp-card ">
+        <img class="work-logo" src="1920px-HP_logo_2012.svg.png" alt="1920px-HP_logo" >
+        <div class="exp-container">
+          <h4><b>HP Inc.</span></b></h4> 
+          <p>Cyber Security Intern</p> 
+          <p>May 2022 - May 2023</p> 
+          <p>Boise, ID</p>
+        </div>
+      </div>      
+    </div>
+  </div>
+
+  <script id="projects" src="projects.js"></script>
+    
+  <div class="pages container">
+    <div class="sizeable">
+  
+      <div class="exp-card ">
+        <img class="work-logo" style="height: 75px;" src="OpSec-Security-Logo.png" alt="OpSec-Security-Logo">
+        <div class="exp-container ">
+          <h4>OpSec Security</h4> 
+          <p>Anti-Piracy Analyst</p> 
+          <p>2021</p> 
+          <p>Meridian, ID</p>
+        </div>
+      </div>
+  
+      <div class="exp-card ">
+        <img class="work-logo" style="height: 50px;" src="Perspecta_logo.svg" alt="perspecta_logo_tm_0" >
+        <div class="exp-container">
+          <h4>Perspecta</h4> 
+          <p>Enterprise Service Desk Specialist</p> 
+          <p>2020 - 2021</p> 
+          <p>Meridian, ID</p>
+        </div>
+      </div>
+  
+      <div class="exp-card ">
+        <img class="work-logo" src="foundry-icon.png" alt="foundry-icon" >
+        <div class="exp-container">
+          <h4>Foundry Interactive</h4> 
+          <p>Software Engineer</p> 
+          <p>2020</p> 
+          <p>Seattle, WA</p>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <img class="work-logo" src="TLG_Logo_Black_RGB-01.png" alt="foundry-icon" >
+        <div class="exp-container">
+          <h4>The Land Group Inc.</h4> 
+          <p>Land Survey Crew Chief</p> 
+          <p>2017 - 2019</p> 
+          <p>Eagle, ID</p>
+        </div>
+      </div>
+  
+    </div>      
+  </div>
+    
+  <div class="pages sizeable">
+    <div class="sizeable ">
+      <span id="title">CONTACT INFORMATION</span>
+        <div id="list">
+          <a class="contact-link" href="https://github.com/ButlerMW" target="_blank">
+            <p>GitHub</p>
+            <i class="fa-brands fa-github" style="color: #f6c5be;"></i>
+          </a>
+          <a class="contact-link" href="mailto: butler.m.w@outlook.com">
+            <p>Email</p>
+            <i class="fa-solid fa-envelope" style="color: #f6c5be;"></i>
+          </a>
+          <a class="contact-link" href="https://www.linkedin.com/in/butlermw/" target="_blank">
+            <p>LinkedIn</p>
+            <i class="fa-brands fa-linkedin" style="color: #f6c5be;"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
 </html>
