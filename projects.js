@@ -22,7 +22,7 @@ const projects = [
     },
     {
         title: "Interpreter Project",
-        img: "",
+        img: "Interpreter-code-sample.png",
         desc: "Executes source code by translating it into machine-readable instructions and directly executing them, using scanner and recursive parser that builds a Context Free Grammar parse tree",
         link: null,
         tools: ["Python", "Git Bash", "VSCode"],
