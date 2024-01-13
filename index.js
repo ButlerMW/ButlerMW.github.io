@@ -6,6 +6,7 @@ for(let i = 0; i < aTag.length; i++) {
     aTag[i].onclick = () => {
       colorToggle(aTag, i);
       getPage(aTag[i].innerHTML);
+      resetMobileNav();
   }
 }
 
@@ -73,3 +74,18 @@ function renderIntro() {
   }
 }
 
+function mobileToggle() {
+  var x = document.getElementById("navbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+
+function resetMobileNav() {
+  var x = document.getElementById("navbar");
+  x.className = "navbar";
+}
+
+document.getElementById("icon").onclick = function() {mobileToggle()};
