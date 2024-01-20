@@ -247,4 +247,7 @@ h4 {
         display: block;
         text-align: left;
     }
+    .sizeable {
+        height: 100%;
+    }
 }
