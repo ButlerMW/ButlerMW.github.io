@@ -261,8 +261,11 @@ h4 {
         padding: 10px;
         margin-top: 60px;
     }
-    .ed-card {
+    .ed-card, .exp-card{
         flex-direction: column;
+    }
+    .exp-card {
+        width: 70%;
     }
     .ed-container p, .ed-container h4 {
         margin-top: 10px;
