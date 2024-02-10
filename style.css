@@ -119,18 +119,18 @@ ul {
     filter:invert(0.25);
 }
 
-#list {
+#list, #contact-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-#list a {
+#list a, #contact-list a {
     padding: 5px 10px;
     font-size: 20px;
 }
 
-#list a:hover {
+#list a:hover, #contact-list a:hover {
     filter: invert(0.5);    
 }
 
@@ -274,7 +274,7 @@ h4 {
     .subtitle {
         width: 77%;
     }
-    #list {
+    #contact-list {
         width: min-content;
     }
 }
