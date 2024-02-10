@@ -122,6 +122,7 @@ ul {
 #list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 #list a {
@@ -272,5 +273,8 @@ h4 {
     }
     .subtitle {
         width: 77%;
+    }
+    #list {
+        width: min-content;
     }
 }
