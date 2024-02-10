@@ -169,22 +169,23 @@ h4 {
 #skills {
     border-collapse: collapse;
     width: 60%;
-    margin: 5%;
+    margin-top: 5%;
 } 
 
 #skills td, #skills th {
     padding: 8px;
     color: rgb(200 200 200);
+    text-align: center;
 }  
 
-#skills td:hover {
+#skills td:hover:not(:empty) {
     background-color: rgb(200 200 200 / 13%);
 }  
 
 #skills th {
     padding-top: 12px;
     padding-bottom: 12px;
-    text-align: left;
+    /* text-align: left; */
     background-color: #F6C5BE;
     color: black;
 }
