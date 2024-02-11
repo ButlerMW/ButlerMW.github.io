@@ -2,7 +2,7 @@ const projects = [
     {
         title: "PivotPro",
         img: "PivotProLogo.jpeg",
-        desc: "A recent and severe drought in Idaho has renewed calls for the efficient use of water resources. The goal is to help Idaho farms analyze and optimize crop water usage saving up to 30% of water. This project aimed to create a modern web interface to automate, connect to, and collect telemetry data from sensors in the field and make it available to a front-end web interface, allowing farms across Idaho to generate graphs, reports, and visualizations from the data.",
+        desc: "A recent and severe drought in Idaho has renewed calls for the efficient use of water resources. The goal is to help Idaho farms analyze and optimize crop water usage saving up to 30% of water. This project aims to create a modern web interface to automate, connect to, and collect telemetry data from sensors in the field and make it available to a front-end web interface, allowing farms across Idaho to generate graphs, reports, and visualizations from the data.",
         link: "https://sdp.boisestate.edu/s23-stone-cold-potatoes/project/",
         tools: ["Django", "Python", "AG Grid", "ChartJS", "JavaScript", "Materialize", "SQLite", "Docker", "GitHub", "VSCode"],
     },
@@ -16,14 +16,14 @@ const projects = [
     {
         title: "Creighton Contracting LLC",
         img: "Creighton-Contracting-Logo.png",
-        desc: "Website for an Idaho Construction Company. Creighton Contracting was established in 2017, providing excelent site work, including all underground, grading, and paving with efficiency and accuracy.",
+        desc: "Website for an Idaho Construction Company. Creighton Contracting was established in 2017, providing excellent site work, including all underground, grading, and paving with efficiency and accuracy.",
         link: "https://www.creightoncontracting.com/",
         tools: ["Gatsby", "JQuery", "JavaScript", "SCSS", "GitHub", "VSCode"],
     },
     {
         title: "Interpreter Project",
         img: "Interpreter-code-sample.png",
-        desc: "Executes source code by translating it into machine-readable instructions and directly executing them, using scanner and recursive parser that builds a Context Free Grammar parse tree",
+        desc: "Executes source code by translating it into machine-readable instructions and directly executing them, using scanner and recursive parser that builds a Context Free Grammar (CFG) parse tree.",
         link: null,
         tools: ["Python", "Git Bash", "VSCode"],
     },
