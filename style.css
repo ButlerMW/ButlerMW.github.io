@@ -49,7 +49,7 @@ body {
 }
 
 .sizeable {
-    height: 93%;
+    height: 100%;
 }
 
 .container {
@@ -174,7 +174,7 @@ h4 {
 
 #skills td, #skills th {
     padding: 8px;
-    color: rgb(200 200 200);
+    color: #d4dada;
     text-align: center;
 }  
 
