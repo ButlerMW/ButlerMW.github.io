@@ -35,13 +35,13 @@ function getPage(link) {
     case 'Education':
       index = 1;
       break;
-    case 'Experience':
+    case 'Relevant Experience':
       index = 2;
       break;
     case 'Projects':
       index = 3;
       break;
-    case 'Previous Experience':
+    case 'Other Experience':
       index = 4;
       break;
     case 'Contact':
