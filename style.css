@@ -226,6 +226,15 @@ h4 {
     opacity: .5;
 }
 
+#subtitle-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.subtitle-item {
+    padding-right: 4px;
+}
+
 @media (max-width: 1400px) {
     .exp-card {
         width: 37%;
@@ -281,5 +290,9 @@ h4 {
     }
     #contact-list {
         width: min-content;
+    }
+    #subtitle-list {
+        flex-direction: column;
+        align-items: center;
     }
 }
