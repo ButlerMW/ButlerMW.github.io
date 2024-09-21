@@ -45,7 +45,7 @@ function renderProjects() {
         const img = document.createElement('img');
         card.appendChild(img);
         card.setAttribute('class', 'card');
-        img.setAttribute('src', projects[i].img)
+        img.setAttribute('src', '/images/' + projects[i].img)
         img.setAttribute('alt', projects[i].img)
         img.setAttribute('class', 'card-img')
         
