@@ -1,5 +1,12 @@
 const projects = [
     {
+        title: "Kouzina",
+        img: "kouzina-logo.png",
+        desc: "Kouzina roughly translated from the greek word meaning \"Kitchen\", is an ongoing cookbook-like project. Where you can add your favorite recipes to a collected database. Search for new recipes with items from your kitchen.",
+        link: null,
+        tools: [".Net", "C#", "JavaScript", "SQLite", "GitHub", "VSCode"],
+    },
+    {
         title: "PivotPro",
         img: "PivotProLogo.jpeg",
         desc: "A recent and severe drought in Idaho has renewed calls for the efficient use of water resources. The goal is to help Idaho farms analyze and optimize crop water usage saving up to 30% of water. This project aims to create a modern web interface to automate, connect to, and collect telemetry data from sensors in the field and make it available to a front-end web interface, allowing farms across Idaho to generate graphs, reports, and visualizations from the data.",
