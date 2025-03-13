@@ -5,243 +5,196 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Michael Butler</title>
   <link rel="icon" href="/images/MB-logo.jpeg">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/764e2ebde4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
-  <nav id="navbar" class="navbar">
-    <a href="javascript:void(0);" class="navLink">Intro</a>
-    <a href="javascript:void(0);" class="navLink">Education</a>
-    <a href="javascript:void(0);" class="navLink">Relevant Experience</a>
-    <a href="javascript:void(0);" class="navLink">Projects</a>
-    <a href="javascript:void(0);" class="navLink">Other Experience</a>
-    <a href="javascript:void(0);" class="navLink">Contact</a>
-    <a href="javascript:void(0);" id="icon" class="icon">
-      <i class="fa-solid fa-bars"></i>
-    </a>
+  <nav id="navbar" class="navbar teal darken-4">
+    <div class="nav-wrapper center">
+      <a href="#aboutme" class="navLink">About Me</a>
+      <a href="#skillsandcerts" class="navLink">Skills & Certificates</a>
+      <a href="#education" class="navLink">Education</a>
+      <a href="#contact" class="navLink">Contact</a>
+      <a id="darkmodebtn" href="javascript:void(0);" onclick="DarkMode();" class="navLink">Dark Theme</a>
+      <a href="javascript:void(0);" id="icon" class="icon">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+    </div>
   </nav>
 
-  <div class="pages sizeable">
-    <div class="sizeable">
-      <span id="title">MICHAEL BUTLER</span>
-      <span class="subtitle" style="color: rgb(200,200,200);">
-        <ul id="subtitle-list">
-          <li class="subtitle-item">Digital Products | </li>
-          <li class="subtitle-item">Software Engineering | </li>
-          <li class="subtitle-item">All Things Technology</li>
-        </ul>
-      </span>
-      
-      <div id="list">
-        <a href="https://github.com/ButlerMW" target="_blank">
-          <i class="fa-brands fa-github" style="color: #f6c5be;"></i>
-        </a>
-        <a href="mailto: butler.m.w@outlook.com">
-          <i class="fa-solid fa-envelope" style="color: #f6c5be;"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/butlermw/" target="_blank">
-          <i class="fa-brands fa-linkedin" style="color: #f6c5be;"></i>
-        </a>
-      </div>
+  <div id="hero" class="parallax-container valign-wrapper">
+    <div class="container ">
+        <h1 id="title" class="center teal-text text-darken-4">MICHAEL BUTLER</h1>
     </div>
-  </div>
-  
-  <div class="pages sizeable">
-    <div class="sizeable ">
-      <div class="card-wrapper">
-        
-        <div class="ed-card ">
-          <img class="school-logo" src="/images/Boise_State_University_seal.svg" alt="Boise_State_University_seal">
-          <div class="ed-container ">
-            <h4>B.S. in Computer Science</h4> 
-            <p>Boise State University, 2023</p> 
-            <p>Boise, ID</p>
-          </div>
-        </div>
-        
-        <div class="ed-card ">
-          <img class="school-logo" src="/images/University_of_Idaho_seal.svg" alt="University_of_Idaho_seal" >
-          <div class="ed-container ">
-            <h4>B.G.S. in General Sciences</h4> 
-            <p>University of Idaho, 2016</p> 
-            <p>Moscow, ID</p>
-          </div>
-        </div>
-   
-        
-        <h2 style="color:#F6C5BE;">Certificates</h2>
-        <div class="ca-card">
-          <div class="ca-container ">
-            <a href="https://www.credly.com/badges/ff709f8a-a36c-4148-886c-d243186bcbad">
-              <img class="school-logo" src="/images/aws-cloud-practitioner.png" alt="aws-cloud-practitioner" >
-            </a>
-            <h4 style="color:#d4dada">AWS Certified Cloud Practitioner</h4>
-          </div>
-        </div>
-        
-      </div>
+    <div class="parallax">
+      <img src="/images/moscow.jpeg" alt="Moscow.jpeg">
     </div>
   </div>
 
-  <div class="pages container">
-    <div>
-      <table id="skills">
-        <tr>
-          <th>Languages</th>
-          <th>Frameworks</th>
-          <th>Misc. Tools</th>
-        </tr>
-        <tr>
-          <td>C#</td>
-          <td>.Net</td>
-          <td>SQL Server Management Studio</td>
-        </tr>
-        <tr>
-          <td>SQL</td>
-          <td>React</td>
-          <td>Trello</td>
-        </tr>
-        <tr>
-          <td>JavaScript</td>
-          <td>Django</td>
-          <td>ColdFusion</td>
-        </tr>
-        <tr>
-          <td>Python</td>
-          <td>Gatsby</td>
-          <td>JIRA</td>
-        </tr>
-        <tr>
-          <td>CSS</td>
-          <td>Express.js</td>
-          <td>Confluence</td>
-        </tr>
-        <tr>
-          <td>HTML</td>
-          <td></td>
-          <td>Cypress.js</td>
-        </tr>
-        <tr>
-          <td>Java</td>
-          <td></td>
-          <td>Docker</td>
-        </tr>
-      </table>
+  <div id="aboutme" class="container teal-text text-darken-4">
+      <div class="row">
+        <div class="col s12 center" >
+          <h4>About Me</h4>
+          <p class="left-align light">
+            I am a passionate technology enthusiast with a strong desire to continuously learn and grow. 
+            With a keen interest in exploring new ideas and mastering emerging technologies, I strive to stay 
+            ahead of industry trends and broaden my knowledge base. Beyond my professional interests, I enjoy 
+            experimenting in the kitchen with new recipes and exploring the world through travel, which keeps 
+            me inspired and motivated. My laid-back, approachable personality allows me to work effectively 
+            with others, and I’m constantly working on enhancing my creativity to bring fresh perspectives to any project.
+          </p>
+        </div>
+      </div>
+  </div>
 
-      <div class="exp-card ">
-        <a href="https://www.simplot.com/company" class="company-link">
-          <img class="work-logo" src="/images/Simplot_Logo.png" alt="Simplot_Logo">
-        </a>
-        <div class="exp-container ">
-          <h4><b>J. R. Simplot Company</b></h4> 
-          <p>Application Delivery Analyst II</p> 
-          <p>July 2024 - Present</p> 
-          <p>Boise, ID</p>
-        </div>
+  <div class="parallax-container valign-wrapper">
+    <div class="container">
+      <div class="row center">
+        <h5 class="quote header col s12 white-text light">
+          <i>"It does not matter how slowly you go so long as you do not stop."</i>
+          <br>- Confucius
+        </h5>
       </div>
-      
-      <div class="exp-card ">
-        <a href="https://americancreditacceptance.com/about-us/" class="company-link">
-          <img class="work-logo" src="/images/aca-trans-logo.sm.png" alt="aca-trans-logo">
-        </a>
-        <div class="exp-container ">
-          <h4><b>American Credit Acceptance</b></h4> 
-          <p>Digital Product Analyst</p> 
-          <p>September 2023 - July 2024</p> 
-          <p>Boise, ID</p>
-        </div>
-      </div>
+    </div>
+    <div class="parallax"><img id="cityimg" src="/images/chicago.jpg" alt="chicago.jpg"></div>
+  </div>
 
-      <div class="exp-card ">
-        <a href="https://www.hp.com/us-en/hp-information.html" class="company-link">
-          <img class="work-logo" src="/images/1920px-HP_logo_2012.svg.png" alt="1920px-HP_logo" >
+  <div id="skillsandcerts" class="container">
+    <div class="row">
+      <div class="col s12 center">
+        <h4>Skills & Certificates</h4>
+        <table class="centered">
+          <thead>
+            <tr>
+              <th>Languages</th>
+              <th>Frameworks</th>
+              <th>Misc. Tools</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>C#</td>
+              <td>.Net</td>
+              <td>SSMS</td>
+            </tr>
+            <tr>
+              <td>SQL</td>
+              <td>React</td>
+              <td>Trello</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>Django</td>
+              <td>ColdFusion</td>
+            </tr>
+            <tr>
+              <td>Python</td>
+              <td>Gatsby</td>
+              <td>JIRA</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+              <td>Express.js</td>
+              <td>Confluence</td>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td></td>
+              <td>Cypress.js</td>
+            </tr>
+            <tr>
+              <td>Java</td>
+              <td></td>
+              <td>Docker</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <a href="https://www.credly.com/badges/ff709f8a-a36c-4148-886c-d243186bcbad">
+          <img class="school-logo" src="aws-cloud-practitioner.png" alt="aws-cloud-practitioner.png" >
         </a>
-        <div class="exp-container">
-          <h4><b>HP Inc.</span></b></h4> 
-          <p>Cyber Security Intern</p> 
-          <p>May 2022 - May 2023</p> 
-          <p>Boise, ID</p>
-        </div>
+        <p>AWS Certified Cloud Practitioner</p>
       </div>
-      
-      <div class="exp-card ">
-        <a href="https://www.foundryinteractive.com/" class="company-link">
-          <img class="work-logo" src="/images/foundry-icon.png" alt="foundry-icon" >
-        </a>
-        <div class="exp-container">
-          <h4>Foundry Interactive</h4> 
-          <p>Software Engineer</p> 
-          <p>2020</p> 
-          <p>Seattle, WA</p>
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="container">
+      <div class="row center">
+        <h5 class="quote header col s12 white-text light">
+          <i>"Success consists of going from failure to failure without loss of enthusiasm."</i>
+          <br>- Winston Churchill
+        </h5>
+      </div>
+    </div>
+    <div class="parallax"><img src="/images/colorado.jpg" alt="colorado.jpg"></div>
+  </div>
+
+  <div id="education" class="container teal-text text-darken-4">
+    <div class="row">
+      <div class="col s12 center">
+        <h4>Education</h4>
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <img id="bsu-seal" class="school-logo" src="/images/Boise_State_University_seal.svg" alt="Boise_State_University_seal.svg">
+            <h5 class="center">B.S. Computer Science</h5>
+            <h6 class="center">Boise State University</h6>
+            <p class="light">2023</p>
+          </div>
+        </div>
+
+        <div class="col s12 m6">
+          <div class="icon-block">
+            <img class="school-logo" src="/images/University_of_Idaho_seal.svg" alt="University_of_Idaho_seal.svg">
+            <h5 class="center">B.G.S. General Sciences</h5>
+            <h6 class="center">University of Idaho</h6>
+            <p class="light">2016</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <script id="projects" src="projects.js"></script>
-    
-  <div class="pages container">
-    <div class="sizeable">
-  
-      <div class="exp-card ">
-        <a href="OpSec-Security-Logo.png" class="company-link">
-          <img class="work-logo" style="height: 75px;" src="/images/OpSec-Security-Logo.png" alt="OpSec-Security-Logo">
-        </a>
-        <div class="exp-container ">
-          <h4>OpSec Security</h4> 
-          <p>Anti-Piracy Analyst</p> 
-          <p>2021</p> 
-          <p>Meridian, ID</p>
-        </div>
+  <div class="parallax-container valign-wrapper">
+    <div class="container">
+      <div class="row center">
+        <h5 class="quote header col s12 white-text light">
+          <i>"I believe that we are here for each other, not against each other."</i>
+          <br>- John Denver
+        </h5>
       </div>
-  
-      <div class="exp-card ">
-        <a href="https://www.peraton.com/company/" class="company-link">
-          <img class="work-logo" style="height: 50px;" src="/images/Perspecta_logo.svg" alt="perspecta_logo_tm_0" >
-        </a>
-        <div class="exp-container">
-          <h4>Perspecta</h4> 
-          <p>Enterprise Service Desk Specialist</p> 
-          <p>2020 - 2021</p> 
-          <p>Meridian, ID</p>
-        </div>
-      </div>
-  
-      <div class="exp-card">
-        <a href="https://www.thelandgroupinc.com/" class="company-link">
-          <img class="work-logo" src="/images/TLG_Logo_Black_RGB-01.png" alt="TLG-icon" >
-        </a>
-        <div class="exp-container">
-          <h4>The Land Group Inc.</h4> 
-          <p>Land Survey Crew Chief</p> 
-          <p>2017 - 2019</p> 
-          <p>Eagle, ID</p>
-        </div>
-      </div>
-  
-    </div>      
+    </div>
+    <div class="parallax"><img src="/images/montana.jpeg" alt="montana.jpeg"></div>
   </div>
     
-  <div class="pages sizeable">
-    <div class="sizeable ">
-      <span id="title">CONTACT INFORMATION</span>
-        <div id="contact-list">
+
+  <div id="contact" class="container teal-text text-darken-4">
+    <div class="row">
+      <div class="col s12 center">
+        <h4>Contact Information</h4>
+        <div id="contact-list" class="center teal-text text-darken-4">
           <a class="contact-link" href="https://github.com/ButlerMW" target="_blank">
             <p>GitHub</p>
-            <i class="fa-brands fa-github" style="color: #f6c5be;"></i>
+            <i class="fa-brands fa-github"></i>
           </a>
           <a class="contact-link" href="mailto: butler.m.w@outlook.com">
             <p>Email</p>
-            <i class="fa-solid fa-envelope" style="color: #f6c5be;"></i>
+            <i class="fa-solid fa-envelope"></i>
           </a>
           <a class="contact-link" href="https://www.linkedin.com/in/butlermw/" target="_blank">
             <p>LinkedIn</p>
-            <i class="fa-brands fa-linkedin" style="color: #f6c5be;"></i>
+            <i class="fa-brands fa-linkedin"></i>
           </a>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="index.js"></script>
-  </body>
+  <script src="js/init.js"></script>
+  <script src="js/darktheme.js"></script>
+  <script src="js/scroll.js"></script>
+</body>
 </html>
