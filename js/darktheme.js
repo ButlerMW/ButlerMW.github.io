@@ -34,7 +34,7 @@ function DarkMode() {
         img.classList.toggle("dark-mode");
     });
     images.forEach((img, index) => {
-        img.src = "/images/" + img.classList.contains("dark-mode") ? darkImages[index] : lightImages[index];
+        img.src = "/images/" + (img.classList.contains("dark-mode") ? darkImages[index] : lightImages[index]);
         img.alt = img.src;
     });
   
