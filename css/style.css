@@ -5,10 +5,11 @@
 html, body {
     height: 100%;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #214038;
+    /* background-color: #214038; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -18,26 +19,16 @@ body {
 
 #title {
     letter-spacing: 10px;
-    color: #F6C5BE;
-    padding: 10px 0px 10px 10px;
-    border-radius: 5px;
 }
 
 #navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: fixed;
-    top: 0;
-    width: 100%;
-    background: inherit;
     z-index: 1;
 }
 
 #navbar a {
     padding: 16px 32px;
     text-decoration: none;
-    color: #F6C5BE;
 }
 
 #navbar a:hover {
@@ -48,20 +39,9 @@ body {
     display: none;
 }
 
-.sizeable {
-    height: 100%;
+.quote {
+    text-shadow: 1px 1px black;
 }
-
-.container {
-    margin-top: 50px;
-}
-
-div div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} 
 
 .about-text {
     width: 80%;
@@ -122,6 +102,7 @@ ul {
 #list, #contact-list {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -185,7 +166,6 @@ h4 {
 #skills th {
     padding-top: 12px;
     padding-bottom: 12px;
-    /* text-align: left; */
     background-color: #F6C5BE;
     color: black;
 }
@@ -212,7 +192,7 @@ h4 {
 
 .contact-link {
     display: flex;
-    color: #F6C5BE;
+    /* color: #F6C5BE; */
     align-items: center;
     text-decoration: none;
     border-radius: 5px;
@@ -267,10 +247,6 @@ h4 {
     .card {
         width: 100%;
     }
-    .sizeable {
-        margin-top: 51px;
-        height: 100%;
-    }
     .card-wrapper {
         align-items: stretch;
         padding: 10px;
@@ -288,11 +264,16 @@ h4 {
     .subtitle {
         width: 77%;
     }
-    #contact-list {
-        width: min-content;
-    }
     #subtitle-list {
         flex-direction: column;
         align-items: center;
     }
+}
+
+.dark-hero img {
+    width: 100%;
+} 
+
+#hero {
+    height: 100% !important;
 }
