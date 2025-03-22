@@ -10,8 +10,13 @@ function DarkMode() {
     let education = document.getElementById("education");
     let contact = document.getElementById("contact");
   
-    // Toggle 'Dark Theme' / 'Original' button text
-    darkModeBtn.innerHTML = darkModeBtn.innerHTML === "Dark Theme" ? "Original Theme" : "Dark Theme";
+    // Toggle icon in button
+    var icon = darkModeBtn.querySelector("i");
+    if (icon.classList.contains("fa-moon")) {
+        icon.className = "fa-solid fa-sun";
+    } else {
+        icon.className = "fa-solid fa-moon";
+    }
   
     // Toggle multiple class changes using a loop
     [navbar, hero, body, title, aboutMe, education, contact].forEach(el => { el?.classList.toggle("teal-text"); el?.classList.toggle("white-text"); });
