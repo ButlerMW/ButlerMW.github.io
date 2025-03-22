@@ -37,8 +37,8 @@ body {
 }
 
 .icon {
-    display: none;
-}
+    padding: 0 !important;
+} 
 
 .quote {
     text-shadow: 1px 1px black;

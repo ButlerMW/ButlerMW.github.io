@@ -17,11 +17,16 @@
       <a href="#skillsandcerts" class="navLink">Skills & Certificates</a>
       <a href="#education" class="navLink">Education</a>
       <a href="#contact" class="navLink">Contact</a>
-      <a href="javascript:void(0);" id="icon" class="icon">
-        <i class="fa-solid fa-bars"></i>
-      </a>
+      <a href="#sidenav" data-target="slide-out" class="icon sidenav-trigger"><i class="fa-solid fa-bars"></i></a>
     </div>
   </nav>
+
+  <ul id="slide-out" class="sidenav teal darken-4">
+    <li><a href="#aboutme" class="sidenavLink white-text">About Me</a></li>
+    <li><a href="#skillsandcerts" class="sidenavLink white-text">Skills & Certificates</a></li>
+    <li><a href="#education" class="sidenavLink white-text">Education</a></li>
+    <li><a href="#contact" class="sidenavLink white-text">Contact</a></li>
+  </ul>
 
   <div class="fixed-action-btn">
     <a id="darkmodebtn" href="javascript:void(0);" onclick="DarkMode();" class="grey darken-4 btn btn-floating btn-large"><i class="fa-solid fa-moon"></i></a>
@@ -198,6 +203,7 @@
 
   <script src="js/index.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/mobilenavbar.js"></script>
   <script src="js/darktheme.js"></script>
   <script src="js/scroll.js"></script>
 </body>
