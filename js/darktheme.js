@@ -9,6 +9,7 @@ function DarkMode() {
     let aboutMe = document.getElementById("aboutme");
     let education = document.getElementById("education");
     let contact = document.getElementById("contact");
+    let sidenav = document.getElementById("slide-out");
   
     // Toggle icon in button
     var icon = darkModeBtn.querySelector("i");
@@ -24,6 +25,9 @@ function DarkMode() {
     // Toggle navbar colors
     navbar.classList.toggle("teal");
     navbar.classList.toggle("black");
+
+    sidenav.classList.toggle("teal");
+    sidenav.classList.toggle("black");
   
     // Toggle background color
     body.classList.toggle("black");
