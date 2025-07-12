@@ -278,3 +278,8 @@ h4 {
 #hero {
     height: 100% !important;
 }
+
+#certificates {
+    display: flex;
+    justify-content: center;
+}
