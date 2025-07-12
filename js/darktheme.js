@@ -20,7 +20,7 @@ function DarkMode() {
     }
   
     // Toggle multiple class changes using a loop
-    [navbar, hero, body, title, aboutMe, education, contact].forEach(el => { el?.classList.toggle("teal-text"); el?.classList.toggle("white-text"); });
+    [navbar, hero, body, title, aboutMe, skillsandcerts, education, contact].forEach(el => { el?.classList.toggle("teal-text"); el?.classList.toggle("white-text"); });
   
     // Toggle navbar colors
     navbar.classList.toggle("teal");
