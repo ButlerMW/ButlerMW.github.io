@@ -3,236 +3,142 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Michael Butler</title>
+  <title>Michael Butler | Personal Website</title>
   <link rel="icon" href="/images/MB-logo.jpeg">
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://kit.fontawesome.com/764e2ebde4.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>  
-  <nav id="navbar" class="navbar teal darken-4">
-    <div class="nav-wrapper center">
-      <a href="#aboutme" class="navLink">About Me</a>
-      <a href="#skillsandcerts" class="navLink">Skills & Certificates</a>
-      <a href="#education" class="navLink">Education</a>
-      <a href="#contact" class="navLink">Contact</a>
-      <a href="#sidenav" data-target="slide-out" class="icon sidenav-trigger"><i class="fa-solid fa-bars"></i></a>
-    </div>
-  </nav>
+  <div class="shooting-stars"></div>
 
-  <ul id="slide-out" class="sidenav teal darken-4">
-    <li><a href="#aboutme" class="sidenavLink white-text">About Me</a></li>
-    <li><a href="#skillsandcerts" class="sidenavLink white-text">Skills & Certificates</a></li>
-    <li><a href="#education" class="sidenavLink white-text">Education</a></li>
-    <li><a href="#contact" class="sidenavLink white-text">Contact</a></li>
-  </ul>
+  <div class="container">
+    <header>
+      <div class="hero-text">
+        <h1>Michael <span class="gradient-text">Butler</span></h1>
+        <p>
+          Full-time application analyst and part-time software engineer 
+          with a passion for building and improving systems that solve real-world problems. 
+        </p>
+        <button class="btn btn-primary">View Projects</button>
+        <button class="btn btn-outline" id="openContact">Contact Me</button>    
+      </div>
+    </header>
 
-  <div class="fixed-action-btn">
-    <a id="darkmodebtn" href="javascript:void(0);" onclick="DarkMode();" class="grey darken-4 btn btn-floating btn-large"><i class="fa-solid fa-moon"></i></a>
-  </div>
-  
-  <div id="hero" class="parallax-container valign-wrapper">
-    <div class="container ">
-      <h1 id="title" class="center teal-text text-darken-4">MICHAEL BUTLER</h1>
-    </div>
-    <div class="parallax">
-      <img src="/images/moscow.jpeg" alt="Moscow.jpeg">
-    </div>
-  </div>
-
-  <div id="aboutme" class="container teal-text text-darken-4">
-      <div class="row">
-        <div class="col s12 center" >
-          <h4>About Me</h4>
-          <p class="left-align light">
-            I am a passionate technology enthusiast with a strong desire to continuously learn and grow. 
-            With a keen interest in exploring new ideas and mastering emerging technologies, I strive to stay 
-            ahead of industry trends and broaden my knowledge base. Beyond my professional interests, I enjoy 
-            experimenting in the kitchen with new recipes and exploring the world through travel, which keeps 
-            me inspired and motivated. My laid-back, approachable personality allows me to work effectively 
-            with others, and I’m constantly working on enhancing my creativity to bring fresh perspectives to any project.
-          </p>
+    <section>
+      <h2>Experience</h2>
+      <div class="grid projects-grid">
+        <div class="card">
+          <h3>Application Analyst</h3>
+          <h5>2024-present</h5>
+          <p>The Simplot Company</p>
+        </div>
+        <div class="card">
+          <h3>Digital Product Analyst</h3>
+          <h5>2023-2024</h5>
+          <p>American Credit Acceptance</p>
+        </div>
+        <div class="card">
+          <h3>Cyber Security Intern</h3>
+          <h5>2022-2023</h5>
+          <p>HP Inc.</p>
+        </div>
+        <div class="card">
+          <h3>Developer - Contractor</h3>
+          <h5>2020-2023</h5>
+          <p><i>Various Tech Companies</i></p>
+        </div>
+        <div class="card">
+          <h3>Land Surveyor</h3>
+          <h5>2017-2019</h5>
+          <p>The Land Group Inc.</p>
         </div>
       </div>
-  </div>
+    </section>
 
-  <div class="parallax-container valign-wrapper">
-    <div class="container">
-      <div class="row center">
-        <h5 class="quote header col s12 white-text light">
-          <i>"It does not matter how slowly you go so long as you do not stop."</i>
-          <br>- Confucius
-        </h5>
-      </div>
-    </div>
-    <div class="parallax"><img id="cityimg" src="/images/chicago.jpg" alt="chicago.jpg"></div>
-  </div>
-
-  <div id="skillsandcerts" class="container teal-text text-darken-4">
-    <div class="row">
-      <div class="col s12 center">
-        <h4>Skills & Certificates</h4>
-        <table class="centered">
-          <thead>
-            <tr>
-              <th>Languages</th>
-              <th>Frameworks</th>
-              <th>Misc. Tools</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            <tr>
-              <td>C#</td>
-              <td>.Net</td>
-              <td>SSMS</td>
-            </tr>
-            <tr>
-              <td>SQL</td>
-              <td>React</td>
-              <td>Trello</td>
-            </tr>
-            <tr>
-              <td>JavaScript</td>
-              <td>Django</td>
-              <td>ColdFusion</td>
-            </tr>
-            <tr>
-              <td>Python</td>
-              <td>Gatsby</td>
-              <td>JIRA</td>
-            </tr>
-            <tr>
-              <td>CSS</td>
-              <td>Express.js</td>
-              <td>Confluence</td>
-            </tr>
-            <tr>
-              <td>HTML</td>
-              <td></td>
-              <td>Cypress.js</td>
-            </tr>
-            <tr>
-              <td>Java</td>
-              <td></td>
-              <td>Docker</td>
-            </tr>
-          </tbody>
-        </table>
-
-          <div id="certificates" class="container">
-            <div class="row">
-              <div class="col s12 center">
-                <div class="col s12 m4">
-                  <div class="icon-block">
-                    <a href="https://www.credly.com/badges/3911274b-c986-4ed2-9754-67b5641f57c7">
-                      <img class="school-logo" src="/images/Security+-jpg.jpg" alt="Security+-jpg.jpg" >
-                    </a>
-                    <p>CompTia Security+</p>
-                  </div>
-                </div>
-                
-                <div class="col s12 m4">
-                  <div class="icon-block">
-                    <a href="https://bcert.me/bc/html/show-badge.html?b=wsfjjyfy">
-                      <img class="school-logo" src="/images/sa-csm-600.webp" alt="sa-csm-600.webp" >
-                    </a>
-                    <p>Certified ScrumMaster (CSM)</p>
-                  </div>
-                </div>
-                
-                <div class="col s12 m4">
-                  <div class="icon-block">
-                    <a href="https://www.credly.com/badges/ff709f8a-a36c-4148-886c-d243186bcbad">
-                      <img class="school-logo" src="/images/aws-cloud-practitioner.png" alt="aws-cloud-practitioner.png" >
-                    </a>
-                    <p>AWS Certified Cloud Practitioner</p>
-                </div>
-              </div>
+    <section>
+      <h2>Education</h2>
+        <div class="grid projects-grid">
+          <div class="card education-card">
+            <div class="education-text">
+              <h3>B.S. Computer Science</h3>
+              <h5>2023</h5>
+              <p>Boise State University</p>
+            </div>
+            <div class="education-logo">
+              <img style="filter: invert(100%);" src="Boise_State_University_seal.svg" alt="Boise State Logo">
+            </div>
+          </div>
+          <div class="card education-card">
+            <div class="education-text">
+              <h3>B.G.S. General Studies</h3>
+              <h5>Minor: Geology</h5>
+              <h5>2016</h5>
+              <p>University of Idaho</p>
+            </div>
+            <div class="education-logo">
+              <img src="University_of_Idaho_seal.svg" alt="U of I Logo">
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="parallax-container valign-wrapper">
-    <div class="container">
-      <div class="row center">
-        <h5 class="quote header col s12 white-text light">
-          <i>"Success consists of going from failure to failure without loss of enthusiasm."</i>
-          <br>- Winston Churchill
-        </h5>
-      </div>
-    </div>
-    <div class="parallax"><img src="/images/colorado.jpg" alt="colorado.jpg"></div>
-  </div>
-
-  <div id="education" class="container teal-text text-darken-4">
-    <div class="row">
-      <div class="col s12 center">
-        <h4>Education</h4>
-        <div class="col s12 m6">
-          <div class="icon-block">
-            <img id="bsu-seal" class="school-logo" src="/images/Boise_State_University_seal.svg" alt="Boise_State_University_seal.svg">
-            <h5 class="center">B.S. Computer Science</h5>
-            <h6 class="center">Boise State University</h6>
-            <p class="light">2023</p>
+        <section>
+          <h3 style="margin-bottom: 25px;">Certifications</h3>
+          <div class="grid projects-grid">
+            <a href="https://www.credly.com/badges/3911274b-c986-4ed2-9754-67b5641f57c7">
+            <div class="card">
+              <h3>Security+</h3>
+              <h5>Earned 2026</h5>
+              <p>
+                Issued by CompTia
+              </p>
+            </div>
+            </a> 
+            <a href="https://bcert.me/bc/html/show-badge.html?b=wsfjjyfy" target="_blank">
+              <div class="card">
+                <h3>Certified ScrumMaster (CSM)</h3>
+                <h5>Earned 2025</h5>
+                <p>Issued by Scrum Alliance</p>
+              </div>
+            </a>
+            <a href="https://www.credly.com/badges/ff709f8a-a36c-4148-886c-d243186bcbad">
+              <div class="card">
+                <h3>Certified Cloud Practitioner</h3>
+                <h5>Earned 2024</h5>
+                <p>Issued by AWS</p>
+              </div>
+            </a>
           </div>
-        </div>
+        </section>
+      </section>
 
-        <div class="col s12 m6">
-          <div class="icon-block">
-            <img class="school-logo" src="/images/University_of_Idaho_seal.svg" alt="University_of_Idaho_seal.svg">
-            <h5 class="center">B.G.S. General Sciences</h5>
-            <h6 class="center">University of Idaho</h6>
-            <p class="light">2016</p>
-          </div>
-        </div>
-      </div>
-    </div>
+      <footer>
+        © <span id="year"></span> Michael Butler
+      </footer>
   </div>
 
-  <div class="parallax-container valign-wrapper">
-    <div class="container">
-      <div class="row center">
-        <h5 class="quote header col s12 white-text light">
-          <i>"I believe that we are here for each other, not against each other."</i>
-          <br>- John Denver
-        </h5>
-      </div>
-    </div>
-    <div class="parallax"><img src="/images/montana.jpeg" alt="montana.jpeg"></div>
-  </div>
-    
+  <!-- Overlay -->
+  <div class="contact-overlay" id="contactOverlay"></div>
 
-  <div id="contact" class="container teal-text text-darken-4">
-    <div class="row">
-      <div class="col s12 center">
-        <h4>Contact Information</h4>
-        <div id="contact-list" class="center teal-text text-darken-4">
-          <a class="contact-link" href="https://github.com/ButlerMW" target="_blank">
-            <p>GitHub</p>
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a class="contact-link" href="mailto: butler.m.w@outlook.com">
-            <p>Email</p>
-            <i class="fa-solid fa-envelope"></i>
-          </a>
-          <a class="contact-link" href="https://www.linkedin.com/in/butlermw/" target="_blank">
-            <p>LinkedIn</p>
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-        </div>
-      </div>
+  <!-- Slide Panel -->
+  <div class="contact-panel" id="contactPanel">
+    <div class="contact-header">
+      <h3>Contact Me</h3>
+      <button id="closeContact">&times;</button>
+    </div>
+    <div class="contact-body">
+      <p>Let’s build something powerful.</p>
+      <a href="mailto:youremail@example.com" class="contact-link">
+        📧 Email
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="contact-link">
+        🔗 LinkedIn
+      </a>
+      <a href="https://github.com" target="_blank" class="contact-link">
+        💻 GitHub
+      </a>
     </div>
   </div>
-
+  
   <script src="js/index.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/mobilenavbar.js"></script>
-  <script src="js/darktheme.js"></script>
-  <script src="js/scroll.js"></script>
 </body>
 </html>
