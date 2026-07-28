@@ -42,3 +42,15 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
   closeBtn.addEventListener("click", closePanel);
   overlay.addEventListener("click", closePanel);
+
+function goToProjects() {
+  document.body.classList.add("fade-out");
+
+  setTimeout(() => {
+    window.location.href = "projects.html";
+  }, 400);
+}
+
+const projectsButton = document.getElementById("projectsButton");
+
+projectsButton.addEventListener("click", goToProjects);
